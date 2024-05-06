@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Form and Table</title>
+</head>
+
+<body>
+
+    <!-- Pokémon form -->
+    <h1>Pokémon Form</h1>
+    <form>
+        <label for="national-dex">National Dex:</label>
+        <input type="number" id="national-dex" name="national-dex" min="0"><br><br>
+
+        <label for="pokemon-name">Pokémon Name:</label>
+        <input type="text" id="pokemon-name" name="pokemon-name"><br><br>
+
+        <label>Generation:</label>
+        <input type="radio" id="gen1" name="generation" value="Gen I">
+        <label for="gen1">Gen I</label>
+        <input type="radio" id="gen2" name="generation" value="Gen II">
+        <label for="gen2">Gen II</label>
+        <input type="radio" id="gen3" name="generation" value="Gen III">
+        <label for="gen3">Gen III</label>
+        <input type="radio" id="gen1" name="generation" value="Gen I">
+        <label for="gen1">Gen IV</label>
+        <input type="radio" id="gen2" name="generation" value="Gen II">
+        <label for="gen2">Gen V</label>
+        <input type="radio" id="gen3" name="generation" value="Gen III">
+        <label for="gen3">Gen VI</label>
+        <input type="radio" id="gen1" name="generation" value="Gen I">
+        <label for="gen1">Gen VII</label>
+        <input type="radio" id="gen2" name="generation" value="Gen II">
+        <label for="gen2">Gen VIII</label>
+        <input type="radio" id="gen3" name="generation" value="Gen III">
+        <label for="gen3">Gen IX</label><br><br>
+
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image"><br><br>
+
+        <label for="type1">Type 1:</label>
+        <input type="text" id="type1" name="type1" list="types">
+        <datalist id="types">
+            <option value="Normal">
+            <option value="Fire">
+            <option value="Water">
+            <option value="Electric">
+            <option value="Grass">
+            <option value="Ice">
+            <option value="Fighting">
+            <option value="Poison">
+            <option value="Ground">
+            <option value="Flying">
+            <option value="Psychic">
+            <option value="Bug">
+            <option value="Rock">
+            <option value="Ghost">
+            <option value="Dragon">
+            <option value="Dark">
+            <option value="Steel">
+            <option value="Fairy">
+        </datalist><br><br>
+
+        <label for="type2">Type 2:</label>
+        <input type="text" id="type2" name="type2" list="types"><br><br>
+
+        <label for="evolves-from">Evolves From:</label>
+        <input type="text" id="evolves-from" name="evolves-from"><br><br>
+
+        <label for="evolves-to">Evolves To:</label>
+        <input type="text" id="evolves-to" name="evolves-to"><br><br>
+
+        <label for="nickname">Nickname:</label>
+        <input type="text" id="nickname" name="nickname"><br><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Pokémon table -->
+    <h1>Pokémon Table</h1>
+    <table border="1">
+        <tr>
+            <th>National Dex</th>
+            <th>Pokémon Name</th>
+            <th>Image</th>
+            <th>Types 1</th>
+            <th>Types 2</th>
+            <th>Evolves From</th>
+            <th>Evolves To</th>
+            <th>Nickname</th>
+            <th>Birthday</th>
+        </tr>
+
+        <!-- Pokémon entries -->
+        <tr>
+            <td>69</td>
+            <td>Caido</td>
+            <td><img src=Image.jpg alt="Caido" width="60"></td>
+            <td bgcolor="FFBB70">Normal</td>
+            <td bgcolor="C40C0C">Fire</td>
+            <td>Attractive</td>
+            <td>Handsome</td>
+            <td>Raph</td>
+            <td>April 09, 2003</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Bulbasaur</td>
+            <td><img src="bulbasaur.jpg" alt="Bulbasaur" width="60"></td>
+            <td bgcolor="7ABA78">Grass</td>
+            <td bgcolor="AD88C6">Poison</td>            <td>None</td>
+            <td>Ivysaur</td>
+            <td>Green lettuce</td>
+            <td>April 10, 2003</td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>Charmander</td>
+            <td><img src="004Charmander.webp" alt="Charmander" width="60"></td>
+            <td colspan="2" bgcolor="C40C0C">Fire</td>
+            <td>None</td>
+            <td>Charmeleon</td>
+            <td>Dragon ball</td>
+            <td>April 11, 2003</td>
+        </tr>
+        <tr>
+            <td>007</td>
+            <td>Squirtle</td>
+            <td><img src="007.png" alt="Squirtle" width="60"></td>
+            <td colspan="2" bgcolor="68D2E8">Water</td>
+            <td>None</td>
+            <td>Wartortle</td>
+            <td>Ninja Turtle</td>
+            <td>April 12, 2003</td>
+        </tr>
+        <tr>
+            <td>039</td>
+            <td>Jigglypuff</td>
+            <td><img src="65d4f9dd0f7e1c2f58ac9b4ecb2dc1c1.jpg" alt="Jigglypuff" width="60"></td>
+            <td bgcolor="FFBB70">Normal</td>
+            <td bgcolor="FF70AB">Fairy</td>
+            <td>None</td>
+            <td>Wigglytuff</td>
+            <td>Pinky</td>
+            <td>April 13, 2003</td>
+        </tr>
+        <tr>
+            <td>025</td>
+            <td>Pikachu</td>
+            <td><img src="5d6d23fd7adb44baba20a60c252da339.jpg" alt="Pikachu" width="60"></td>
+            <td colspan="2" bgcolor="F3CA52">Electric</td>
+            <td>None</td>
+            <td>Raichu</td>
+            <td>Yellow thor</td>
+            <td>April 14, 2003</td>
+        </tr>
+        <tr>
+            <td>041</td>
+            <td>Zubat</td>
+            <td><img src="zubat.jpg" alt="Zubat" width="60"></td>
+            <td bgcolor="AD88C6">Poison</td>
+            <td bgcolor="F97300">Flying</td>
+            <td>None</td>
+            <td>Golbat</td>
+            <td>Bat</td>
+            <td>April 15, 2003</td>
+        </tr>
+        <tr>
+            <td>060</td>
+            <td>Poliwag</td>
+            <td><img src="060.png" alt="Poliwag" width="60"></td>
+            <td  colspan="2" bgcolor="68D2E8">Water</td>
+            <td>None</td>
+            <td>Poliwhirl</td>
+            <td>Blowfish</td>
+            <td>April 16, 2003</td>
+        </tr>
+        <tr>
+            <td>092</td>
+            <td>Gastly</td>
+            <td><img src="092.png" alt="Gastly" width="60"></td>
+            <td bgcolor="153448">Ghost</td>
+            <td bgcolor="AD88C6">Poison</td>
+            <td>None</td>
+            <td>Haunter</td>
+            <td>Black ball</td>
+            <td>April 17, 2003</td>
+        </tr>
+        <tr>
+            <td>132</td>
+            <td>Ditto</td>
+            <td><img src="250px-0132Ditto.png" alt="Ditto" width="60"></td>
+            <td  colspan="2" bgcolor="FFBB70">Normal</td>
+            <td>None</td>
+            <td>None</td>
+            <td>Purple jelly</td>
+            <td>April 18, 2003</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
