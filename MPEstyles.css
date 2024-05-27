@@ -1,0 +1,182 @@
+.flex-container {
+    justify-content: flex-start;
+    width: 90vw;
+    border: 3px solid black;
+    padding-right: 10px;
+    padding-left: 37px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: start;
+}
+ 
+.bg {
+    background-image: url(wp10311717.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+.image img {
+    height: 350px;
+    weight: 350px;
+    transition: transform 0.3s ease;
+}
+ 
+.box {
+    width: 400px;
+    height: 400px;
+    color: white;
+    padding-top: 40px;
+    border-radius: 1vh;
+    font-size: 2rem;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+ 
+ 
+.box .images {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: right;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+ 
+.name {
+    text-shadow: 1px 1px 5px black;;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+}
+ 
+.box .name {
+    display: none;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+ 
+.box:hover img {
+    transform: scale(1.1);
+}
+ 
+@media (max-width: 980px) {
+    .box {
+        width: 100%;
+        transition: 1s;
+        height: 150px;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-around;
+    }
+ 
+    .image img {
+        display: inline-block;
+        margin-left: 30px;
+        height: 100%;
+        width: 135px;
+    }
+   
+    .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+ 
+    .box .name {
+        display: inline-block;
+        flex-direction: column;
+        padding-bottom: 50px;
+        text-align: center;
+        align-items: center;
+    }
+ 
+    .box .images {
+        display: inline;
+    }
+ 
+    .box:hover {
+        background-image: url(glow.png);
+    }
+ 
+}
+ 
+@media (max-width: 480px) {
+    .flex-container {
+        justify-content: center;
+        padding: 10px;
+    }
+ 
+    .box {
+        width: 100%;
+        height: 50%;
+        margin: 10px;
+        flex-direction: column;
+    }
+ 
+    .box .name {
+        display: block;
+        padding-bottom: 50px;
+        text-align: center;
+        align-items: center;
+    }
+ 
+    .box .images {
+        display: none;
+    }
+}
+#box1 {
+    background-color: rgb(202, 34, 34);
+}
+ 
+#box2 {
+    background-color: rgb(234, 231, 49);
+}
+ 
+#box3 {
+    background-color: rgb(51, 153, 65);
+}
+ 
+#box4 {
+    background-color: skyblue;
+}
+ 
+#box5 {
+    background-color: burlywood;
+}
+ 
+#box6 {
+    background-color: rgb(238, 208, 90);
+}
+ 
+#box7 {
+    background-color: rgb(64, 41, 231);
+}
+ 
+#box8 {
+    background-color: rgb(168, 29, 193);
+}
+ 
+#box9 {
+    background-color: rgb(216, 168, 72);
+}
+ 
+#box10 {
+    background-color: rgb(36, 196, 47);
+}
+ 
+#box11 {
+    background-color: rgb(46, 62, 208);
+}
+ 
+#box12 {
+    background-color: tan;
+}
