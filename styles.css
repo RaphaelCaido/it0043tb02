@@ -1,0 +1,160 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+ 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-image: url('dd2zouo-047f7b3f-b895-43ac-82a4-abb6ca12c52a.png');
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 20px;
+    flex-grow: 1;
+    transition: all 0.3s ease;
+    position: relative;
+}
+ 
+.pokemon img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+ 
+.pokemon .name {
+    display: none;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+ 
+.pokemon .pokeball {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+ 
+.pokemon:hover {
+    background-image: url('path/to/hover-bg.png');
+}
+ 
+.pokemon:hover img {
+    transform: scale(1.1);
+}
+ 
+/* Responsive grid to list */
+@media (max-width: 1024px) {
+    .pokemon {
+        width: 33.33%;
+    }
+}
+ 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+ 
+    .pokemon {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .pokemon .name {
+        display: inline;
+        margin-left: 20px;
+    }
+ 
+    .pokemon .pokeball {
+        display: inline;
+    }
+}
+ 
+/* List to card */
+@media (max-width: 480px) {
+    .container {
+        justify-content: center;
+        padding: 10px;
+    }
+ 
+    .pokemon {
+        width: 45%;
+        margin: 10px;
+        flex-direction: column;
+    }
+ 
+    .pokemon .name {
+        display: block;
+        margin-top: 10px;
+    }
+ 
+    .pokemon .pokeball {
+        display: none;
+    }
+}
+
+#box1 {
+    background-color: #FFDD57;
+}
+#box2 {
+    background-color: #d3571e;
+}
+
+#box3 {
+    background-color: #38d445;
+}
+
+#box4 {
+    background-color: #f1ee3d;
+}
+
+#box5 {
+    background-color: #38a3d4;
+}
+
+#box6 {
+    background-color: #ff6ff3;
+}
+
+#box7 {
+    background-color: #f8c75c;
+}
+
+#box8 {
+    background-color: #e77ad5;
+}
+
+#box9 {
+    background-color: #38d445;
+}
+
+#box10 {
+    background-color: #5a2b70;
+}
+
+#box11 {
+    background-color: #eed48e;
+}
+
+#box12 {
+    background-color: #ecca30;
+}
