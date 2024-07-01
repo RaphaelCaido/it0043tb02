@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="Caido_tsa8.css" />
+  </head>
+  <body>
+    <div class="controls">
+      <div class="control-group">
+        <label>Flex Direction:</label>
+        <div id="flex-direction" class="button-group">
+          <button data-value="row">Row</button>
+          <button data-value="column">Column</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <label>Justify Content:</label>
+        <div id="justify-content" class="button-group">
+          <button data-value="flex-start">Start</button>
+          <button data-value="center">Center</button>
+          <button data-value="flex-end">End</button>
+          <button data-value="space-between">Space Between</button>
+          <button data-value="space-around">Space Around</button>
+          <button data-value="space-evenly">Space Evenly</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <label>Align Items:</label>
+        <div id="align-items" class="button-group">
+          <button data-value="flex-start">Start</button>
+          <button data-value="center">Center</button>
+          <button data-value="flex-end">End</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="gap">Gap:</label>
+        <input type="text" id="gap" value="10" />
+      </div>
+      <div class="control-group">
+        <label for="flex-grow-1">Flex Grow Box 1:</label>
+        <input type="text" id="flex-grow-1" value="1" />
+      </div>
+      <div class="control-group">
+        <label for="flex-grow-2">Flex Grow Box 2:</label>
+        <input type="text" id="flex-grow-2" value="1" />
+      </div>
+      <div class="control-group">
+        <label for="flex-grow-3">Flex Grow Box 3:</label>
+        <input type="text" id="flex-grow-3" value="1" />
+      </div>
+      <div class="control-group">
+        <button id="reset-grow">Reset Flex Grow</button>
+        <button id="grow-all">Grow All</button>
+      </div>
+    </div>
+    <div class="flex-container">
+      <box class="flex-item" id="box-1">1</box>
+      <box class="flex-item" id="box-2">2</box>
+      <box class="flex-item" id="box-3">3</box>
+    </div>
+    <script src="Caido_tsa8.js"></script>
+  </body>
+</html>
