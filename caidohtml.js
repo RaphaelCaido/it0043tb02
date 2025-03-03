@@ -1,21 +1,16 @@
 function animateBox(day) {
     let box = document.getElementById("box");
-    box.classList.remove("hidden");
 
     let colors = {
-        "Monday": "red",
-        "Tuesday": "blue",
-        "Wednesday": "green",
-        "Thursday": "yellow",
-        "Friday": "purple",
+        "Monday": "purple",
+        "Tuesday": "pink",
+        "Wednesday": "blue",
+        "Thursday": "green",
+        "Friday": "yellow",
         "Saturday": "orange",
-        "Sunday": "pink"
+        "Sunday": "red"
     };
 
-    box.style.backgroundColor = colors[day] || "black";
+    box.style.backgroundColor = colors[day] || "white";
     box.style.transform = "translateY(50px)";
-
-    setTimeout(() => {
-        box.style.transform = "translateY(100px)";
-    }, 500);
 }
