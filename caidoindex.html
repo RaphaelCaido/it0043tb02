@@ -8,8 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Select a Day</h1>
-        <div class="buttons">
+        <div class="sidebar">
             <button class="monday" onclick="animateBox('Monday')">Monday</button>
             <button class="tuesday" onclick="animateBox('Tuesday')">Tuesday</button>
             <button class="wednesday" onclick="animateBox('Wednesday')">Wednesday</button>
@@ -18,7 +17,10 @@
             <button class="saturday" onclick="animateBox('Saturday')">Saturday</button>
             <button class="sunday" onclick="animateBox('Sunday')">Sunday</button>
         </div>
-        <div id="box"></div>
+        <div class="content">
+            <h1>Select a Day</h1>
+            <div id="box"></div>
+        </div>
     </div>
     <script src="caidohtml.js"></script>
 </body>
