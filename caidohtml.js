@@ -12,5 +12,9 @@ function animateBox(day) {
     };
 
     box.style.backgroundColor = colors[day] || "white";
-    box.style.transform = "translateY(50px)";
+    box.style.transform = "scale(1.1)";
+    
+    setTimeout(() => {
+        box.style.transform = "scale(1)";
+    }, 300);
 }
