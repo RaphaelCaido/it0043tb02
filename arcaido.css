@@ -1,0 +1,24 @@
+body {
+    background-color: #fff8dc;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.restaurant-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d2691e;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card img {
+    object-fit: cover;
+    height: 200px;
+}
